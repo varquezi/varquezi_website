@@ -9,6 +9,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 export default function Contact() {
     return(
         <section id="contact">
+            <div className='flexr'>
             <div className='contentm'>
             <div className='title c3'><span className='ul'>beam me up scotty</span> 🛸</div>
             <div className='text f1 c0'>
@@ -26,6 +27,7 @@ export default function Contact() {
                     <a href ={resume} target="_blank">< FontAwesomeIcon icon={faFile} className='icon' /></a>
                 </div>
             </footer>
+            </div>
         </section>
     )
 }
