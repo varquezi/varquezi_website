@@ -1,4 +1,5 @@
 import './pages.css'
+import Showcase from '../components/Showcase'
 
 export default function Experience() {
     return(
@@ -9,6 +10,7 @@ export default function Experience() {
             <div className='text f1 c0'>a mix of projects i've worked on either for school, work or personal development</div>
             </div>
             </div>
+            < Showcase />
         </section>
     )
 }

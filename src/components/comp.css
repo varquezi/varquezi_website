@@ -31,6 +31,11 @@ nav div{
     height: 4rem;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
 #logo{
     font-family: var(--f0);
     color: var(--c3);
