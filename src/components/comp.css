@@ -102,7 +102,7 @@ nav button:hover{
 
     #navbar.active{
         background-color: var(--c0);
-        border-left: solid 0.15rem var(--c3);
+        backdrop-filter: blur(0.5rem);
         right: 0rem;
     }
 

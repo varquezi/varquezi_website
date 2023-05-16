@@ -9,7 +9,7 @@ export default function About() {
         <section id="about" className="top">
             <div className='flexrr'>
                 <div className='contentl'>
-                    <div className='title c3'><span className='ul'>earth to ivan</span> 🌎
+                    <div className='title c3'><span className='ul'>earth to me</span> 🌎
                     </div>
                         
                     <div className='text f1 c0'>

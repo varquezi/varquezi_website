@@ -185,8 +185,13 @@ footer {
 }
 
 .flexc{
-    display:flex;
+    width: 70vw;
+    max-width: 80rem;
+    display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 3rem 5rem 3rem;
 }
 
 .borderu{

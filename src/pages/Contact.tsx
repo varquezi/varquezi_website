@@ -9,7 +9,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 export default function Contact() {
     return(
         <section id="contact">
-            <div className='flexr'>
+            <div className='flexc'>
             <div className='contentm'>
             <div className='title c3'><span className='ul'>beam me up scotty</span> 🛸</div>
             <div className='text f1 c0'>
