@@ -1,0 +1,117 @@
+@import '../branding.css';
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    width: 100vw;
+    height: 4rem;
+    
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+    padding-right: 0.25rem;
+}
+
+#bar{
+    background-color: #93786377;
+    backdrop-filter: blur(0.5rem);
+    position: fixed;
+    z-index: 9999;
+}
+
+.barbg{
+    position: fixed;
+    border-bottom: 0.15rem solid var(--c3);
+    transform-origin: bottom left;
+    width: 100vw;
+    height: 4rem;
+}
+
+#logo{
+    font-family: var(--f0);
+    color: var(--c3);
+    margin-left:0.8rem;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0rem;
+}
+
+#navbar li{
+    color: var(--c3);
+    background: transparent;
+    list-style: none;
+    position: relative;
+    margin-right: 1rem;
+    padding:0.8rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+
+#navbar li:hover{
+    color: var(--c0);
+    background: var(--c3);
+    cursor: pointer;
+}
+
+nav button{
+    display: none;
+    margin-right: 0rem;
+    background-color: transparent;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+nav button:hover{
+    background-color: var(--c3);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 769px) {
+
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        position: fixed;
+        background: var(--c0);
+        width: 15rem;
+        height: 100vh;
+        right: -15rem;
+        top: 0;
+        transition: ease-out 0.3s;
+    }
+
+    #navbar.active{
+        background-color: var(--c0);
+        border-left: solid 0.15rem var(--c3);
+        right: 0rem;
+    }
+
+    #navbar a{
+        margin: 2rem 0rem;
+    }
+
+    nav button{
+        display: block;
+        border: 0;
+        outline: 0;
+        top:0;
+        right: 0;
+        z-index: 9999;
+    }
+}
+

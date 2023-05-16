@@ -1,0 +1,266 @@
+@import '../branding.css';
+@import './pages.css';
+
+body {
+    background-color: var(--c2);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    outline: 0.1rem solid var(--c3);
+    color: var(--c3);
+    fill: var(--c3);
+    transition: 0.3s;
+    
+}
+
+button .icon {
+    color: var(--c3);
+    width: 1.3rem;
+    height: 1.3rem;
+    padding: 0rem 0.5rem 0rem 0rem;
+    margin: 0;
+    transition: 0.3s;
+}
+
+button:hover {
+    outline: 0.1rem solid var(--c2);
+    background-color: var(--c3);
+    color: var(--c0);
+    fill: var(--c0);
+}
+
+button:hover .icon {
+    color: var(--c0);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    justify-self: flex-end;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.pimg0 {
+    background-image: url('../assets/0-stars.png');
+    background-position: bottom center;
+    background-size: cover;
+    position: absolute;
+    object-fit: cover;
+    object-position: bottom center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.pimg1 {
+    background-image: url('../assets/1-planet.png');
+    background-position: bottom center;
+    background-size: cover;
+    position: absolute;
+    object-fit: cover;
+    object-position: bottom center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.pimg2 {
+    background-image: url('../assets/2-belt.png');
+    background-position: bottom center;
+    background-size: cover;
+    position: absolute;
+    object-fit: cover;
+    object-position: bottom center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.pimg3 {
+    background-image: url('../assets/3-main.png');
+    background-position: bottom center;
+    background-size: cover;
+    position: absolute;
+    object-fit: cover;
+    object-position: bottom center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.pimg4 {
+    background-image: url('../assets/4-rocks.png');
+    background-position: bottom center;
+    background-size: cover;
+    position: absolute;
+    object-fit: cover;
+    object-position: bottom center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.profilewrap{
+    padding: 1.5rem;
+}
+
+.mailwrap{
+    padding: 1rem;
+}
+
+.profile{
+    background-image: url('../assets/me.png');
+    background-size: cover;
+    border-radius: 50%;
+    border: 0.2rem solid var(--c3);
+    justify-self: center;
+    align-self: center;
+    width: 70vw;
+    height: 70vw;
+    max-width: 20rem;
+    max-height: 20rem;
+}
+
+.top{
+    z-index: 10;
+}
+
+.contentl{
+    text-align: left;
+    max-width: 50rem;
+}
+
+.contentm{
+    text-align: center;
+    max-width: 50rem;
+}
+
+.contentr{
+    text-align: right;
+    max-width: 50rem;
+}
+
+.flexrr{
+    width: 70vw;
+    max-width: 80rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 3rem 5rem 3rem;
+}
+
+.flexr{
+    width: 70vw;
+    max-width: 80rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 3rem 5rem 3rem;
+}
+
+.flexc{
+    display:flex;
+    flex-direction: column;
+}
+
+.borderu{
+    border-top: solid 0.15rem var(--c3);
+}
+
+.borderr{
+    border-right: solid 0.15rem var(--c3);
+}
+
+.borderl{
+    border-left: solid 0.15rem var(--c3);
+}
+
+.p1{
+    padding: 1rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.linksf {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.icon {
+    color: var(--c3);
+    width: 1.3rem;
+    height: 1.3rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    color: var(--c1);
+    scale: 1.2;
+}
+
+#landing{
+    background: radial-gradient(circle, var(--c1) 0%, var(--c0) 60%);
+    position: relative;
+    z-index: -1;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+#about{
+    background-color: var(--c2);
+    min-height: 100vh;
+    width: 100vw;
+}
+
+#projects{
+    background-color: var(--c2);
+    min-height: 100vh;
+    width: 100vw;
+}
+
+#contact{
+    background-color: var(--c2);
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 769px) {
+
+}

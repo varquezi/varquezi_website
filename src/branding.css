@@ -1,0 +1,79 @@
+:root{
+    --f0: 'Raleway', sans-serif;
+    --f1: 'Roboto Condensed', sans-serif;
+    --c0: #363633;
+    --c1: #564237;
+    --c2: #937863;
+    --c3: #f4dfb1;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.f0{
+    font-family: var(--f0);
+}
+
+.f1{
+    font-family: var(--f1);
+}
+
+.c0{
+    color: var(--c0);
+}
+
+.c1{
+    color: var(--c1);
+}
+
+.c2{
+    color: var(--c2);
+}
+
+.c3{
+    color: var(--c3);
+}
+
+.it{
+    font-style: italic;
+}
+
+.b{
+    font-weight: bold;
+}
+
+.ul{
+    text-decoration: underline;
+}
+
+.us{
+    -moz-user-select: text;
+    -khtml-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+.title{
+    font-size: 3rem;
+}
+
+.text{
+    font-size: 1.3rem;
+}
+
+.right{
+    text-align: right;
+    align-items: right;
+    justify-content: end;
+}
+
+.left{
+    text-align: left;
+    align-items: left;
+}
