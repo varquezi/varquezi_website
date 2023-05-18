@@ -5,12 +5,10 @@ import { Link } from 'react-scroll';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 export default function Navbar() {
-
     const [clicked, setClicked] = useState(false);
     const handleClick = () => {
         setClicked(!clicked);
     }
-
     let { scrollYProgress } = useScroll();
     let x = useTransform(scrollYProgress, [0, 1], ["-100vw", "0vw"]);
     
@@ -29,7 +27,7 @@ export default function Navbar() {
                     <Link to="contact" smooth={true} duration={500}><li onClick={handleClick}>contact</li></Link>
                 </ul>
                 <div id="mobile">
-                    <button type="button" onClick={handleClick}>{clicked ? "❌": "🥛    " }</button>
+                    <button type="button" onClick={handleClick}>{clicked ? "❌": "🥛" }</button>
                 </div>
             </div>
         </nav>
