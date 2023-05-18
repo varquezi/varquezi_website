@@ -17,8 +17,6 @@ nav div{
 }
 
 #bar{
-    background-color: #93786377;
-    backdrop-filter: blur(0.5rem);
     position: fixed;
     z-index: 9999;
 }
@@ -43,6 +41,10 @@ nav div{
     background-size: cover;
     background-position: center center;
     transition: 0.1s ease-in-out;
+}
+
+.card:hover {
+    scale: 1.05;
 }
 
 .ccontent{
@@ -145,6 +147,11 @@ nav button:hover{
 }
 
 @media screen and (max-width: 769px) {
+    
+    #bar{
+        background-color: #93786377;
+        backdrop-filter: blur(0.5rem);
+    }
 
     #navbar{
         display: flex;

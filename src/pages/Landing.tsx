@@ -13,7 +13,7 @@ export default function Landing() {
     
 
     const inverval = 1000;
-    const titles = ["web developer", "data analyst", "designer", "student",<s className='f1 c3 text it'>good at board games</s>];
+    const titles = ["web developer", "data analyst", "designer", "student",<s className='f1 c3 text it'>sleeps a full 8 hours</s>];
 
     const TextCycle = () => {
         const[currentTextIndex, setCurrentTextIndex] = useState(0);
