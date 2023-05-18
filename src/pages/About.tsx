@@ -12,12 +12,13 @@ export default function About() {
                     <div className='title c3'><span className='ul'>earth to me</span> 🌎
                     </div>
                         
-                    <div className='text f1 c0'>
-                        i'm <span className="f1 c3"> ivan</span>!
-                        currently, i'm an MCS student at UofT looking for internship opportunities in <span className='f1 c3'>data and full stack web development</span>.
+                    <div className='text f1 c0 borderb pb'>
+                        hi, i'm <span className="f1 c3"> ivan</span>!
+                        i'm an MCS student at UofT currently looking for internship opportunities in <span className='f1 c3'>data and full stack web development</span>.
                         as of right now, i'm a <a href="https://utm.calendar.utoronto.ca/course/csc263h5" target="_blank"><span className='f1 ul c3'>research assistant for CSC263</span></a>, and a <a href="https://mcss.club" target="_blank"><span className='f1 ul c3'>marketing associate for the Mathematics and Computational Sciences Society</span></a> at UTM.
                         aside from cs and stats, i'm also super into media production (it's actually partially how i picked up coding in the first place).
-                        <br/>you can find me at the links below, or keep scrolling to see some stuff i've worked on!
+                        <br/>you can either find me napping with my dog <span className='f1 c3'>Sol 🐶 </span>(who inspired the whole space theme of my website), or at the <span className='f1 c3'>links below</span>
+                        <br/>keep scrolling to see some stuff i've worked on!
                     </div>
 
                     <div className='links'>

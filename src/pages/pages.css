@@ -129,7 +129,7 @@ footer {
 }
 
 .profile{
-    background-image: url('../assets/me.png');
+    background-image: url('https://avatars.githubusercontent.com/u/90786958?v=4');
     background-size: cover;
     border-radius: 50%;
     border: 0.2rem solid var(--c3);
@@ -206,8 +206,16 @@ footer {
     border-left: solid 0.15rem var(--c3);
 }
 
-.p1{
-    padding: 1rem;
+.borderb{
+    border-bottom: solid 0.15rem var(--c3);
+}
+
+.pt{
+    padding-top: 1rem;
+}
+
+.pb{
+    padding-bottom: 1rem;
 }
 
 .links {
