@@ -7,6 +7,7 @@ nav{
     background: none;
     width: 100vw;
     height: 4rem;
+    z-index: 9999;
     
 }
 
@@ -14,6 +15,7 @@ nav div{
     display: flex;
     align-items: center;
     padding-right: 0.25rem;
+    z-index: 9999;
 }
 
 #bar{
@@ -27,11 +29,19 @@ nav div{
     transform-origin: bottom left;
     width: 100vw;
     height: 4rem;
+    z-index: 9999;
+}
+
+.cardwrap{
+    z-index: 0;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .card {
-    width: 15rem;
-    height: 10rem;
+    z-index: 0;
+    background-color: var(--c0);
+    width: 13.5rem;
+    height: 24rem;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -41,10 +51,12 @@ nav div{
     background-size: cover;
     background-position: center center;
     transition: 0.1s ease-in-out;
+    z-index: 1;
 }
 
 .card:hover {
-    scale: 1.05;
+    z-index: 0;
+    scale: 0.95;
 }
 
 .ccontent{
@@ -52,12 +64,14 @@ nav div{
     display: flex;
     flex-direction: column;
     margin-right: 0.85rem;
+    margin-left: 0.85rem;
     margin-top: 0.9rem;
     justify-content: start;
     align-items: end;
 }
 
 .coverlay{
+    z-index: 0;
     opacity: 0;
     width: 100%;
     height: 100%;
@@ -71,8 +85,8 @@ nav div{
 
 .coverlay:hover{
     opacity: 1;
-    background: linear-gradient(180deg, #363633FF 0%, #93786377 100%);
-    outline: 0.1rem solid var(--c3);
+    background: linear-gradient(180deg, #363633FF 0%, #937863CC 80%);
+    outline: 0.2rem solid var(--c3);
     backdrop-filter: blur(0.3rem);
 }
 
@@ -94,8 +108,12 @@ nav div{
 }
 
 .showcase{
-    border-top: 0.15rem var(--c3) solid;
-    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
 }
 
 #logo{
@@ -104,6 +122,10 @@ nav div{
     margin-left:0.8rem;
     margin-right: auto;
     cursor: pointer;
+}
+
+.logotext:hover{
+    text-decoration: underline;
 }
 
 #navbar{

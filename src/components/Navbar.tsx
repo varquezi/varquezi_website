@@ -20,7 +20,7 @@ export default function Navbar() {
         <motion.div className='barbg' style={{ x }}></motion.div>
         <nav id="bar">
             <motion.div style={{position: "fixed", scaleX: scrollYProgress}}></motion.div>
-            <Link to="landing" smooth={true} duration={500}><div id='logo'>☕ varquezi</div></Link>
+            <Link to="landing" smooth={true} duration={500}><div id='logo'>☕&nbsp;<span className="logotext">varquezi</span></div></Link>
             <div>
                 <ul id='navbar' className={clicked ?  '#navbar active':'#navbar'}>
                     <Link to="landing" smooth={true} duration={500}><li onClick={handleClick}>🚀</li></Link>
