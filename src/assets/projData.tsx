@@ -1,3 +1,5 @@
+
+
 export default [
     {
         name: "Personal Website",
@@ -10,8 +12,8 @@ export default [
         name: "OCT Scraper",
         tech: "Python",
         link: "https://github.com/varquezi/OCT_Scraper",
-        img: "",
-        info: "Simple scraper that fetches the degrees of Ontario teachers from the public OCT Database and formats them as a CSV."
+        img: require("../assets/project_imgs/OCT_Scraper.jpg"),
+        info: "Fetches the degrees of Ontario teachers from the public OCT Database and formats them as a CSV."
     },
     {
         name: "Placeholder",
