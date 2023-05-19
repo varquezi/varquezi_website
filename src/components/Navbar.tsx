@@ -5,7 +5,6 @@ import { useWindowScroll } from 'react-use';
 import { Link } from 'react-scroll';
 import { motion, useScroll, useTransform, useAnimation } from 'framer-motion';
 import { SlideReveal } from '../assets/animations/SlideReveal';
-import { FillRight } from '../assets/animations/FillRight';
 
 export default function Navbar() {
     const [clicked, setClicked] = useState(false);
