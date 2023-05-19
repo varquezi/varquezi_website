@@ -2,7 +2,6 @@ import './pages.css';
 import { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { FillUp } from '../assets/animations/FillUp';
-import { SlideReveal } from '../assets/animations/SlideReveal';
 
 export default function Landing() {
     let { scrollYProgress } = useScroll();

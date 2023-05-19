@@ -29,7 +29,7 @@ export default function Navbar() {
         <motion.div className='barbg' style={{ x }}></motion.div>
         <motion.nav id="bar"
             animate={controls}
-            transition={{ type: 'tween', duration: 0.25}}
+            transition={{ type: 'tween', duration: 0.05}}
             style={{
                 position: "fixed",
                 top: 0,
@@ -46,7 +46,7 @@ export default function Navbar() {
                     <SlideReveal delay={0.05}><Link to="projects" smooth={true} duration={500}><li onClick={handleClick}>projects</li></Link></SlideReveal>
                     <SlideReveal delay={0}><Link to="contact" smooth={true} duration={500}><li onClick={handleClick}>contact</li></Link></SlideReveal>
                 </ul>
-                <SlideReveal delay={0}><div id="mobile">
+                <SlideReveal delay={0.15}><div id="mobile">
                      <button type="button" onClick={handleClick}>{clicked ? "❌": "🥛" }</button>
                 </div></SlideReveal>
             </div>
