@@ -87,7 +87,7 @@ nav div{
     opacity: 1;
     background: linear-gradient(180deg, #363633FF 0%, #937863CC 80%);
     outline: 0.2rem solid var(--c3);
-    backdrop-filter: blur(0.3rem);
+    backdrop-filter: blur(0.1rem);
 }
 
 .ctitle {

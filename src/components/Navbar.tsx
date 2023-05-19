@@ -12,7 +12,6 @@ export default function Navbar() {
     let { scrollYProgress } = useScroll();
     let x = useTransform(scrollYProgress, [0, 1], ["-100vw", "0vw"]);
     
-
     return(
     <>
         <motion.div className='barbg' style={{ x }}></motion.div>
