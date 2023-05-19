@@ -1,17 +1,15 @@
-import './pages.css'
-import { useRef } from 'react'
-import { motion, useInView } from 'framer-motion';
+import './pages.css';
+import { useRef } from 'react';
 import { FillRight } from '../assets/animations/FillRight';
 import { FillUp } from '../assets/animations/FillUp';
 import { SlideReveal } from '../assets/animations/SlideReveal';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFile } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin, faInstagram, faYoutube} from '@fortawesome/free-brands-svg-icons'
-import resume from '../assets/varquezi_resume_may_2023.pdf'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFile } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin, faInstagram, faYoutube} from '@fortawesome/free-brands-svg-icons';
+import resume from '../assets/varquezi_resume_may_2023.pdf';
 
 export default function About() {
     const ref = useRef(null);
-    const isInView = useInView(ref, {once: true})
 
     return(
         <section id="about" className="top">
