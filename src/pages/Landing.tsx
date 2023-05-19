@@ -1,6 +1,8 @@
 import './pages.css';
 import { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { FillUp } from '../assets/animations/FillUp';
+import { SlideReveal } from '../assets/animations/SlideReveal';
 
 export default function Landing() {
     let { scrollYProgress } = useScroll();
@@ -32,12 +34,14 @@ export default function Landing() {
     return(
         <section id="landing">
             <motion.div style ={{ y: text, position: "absolute"}} className='contentm'>
+                <FillUp>
                     <span className='title c3'>
                     welcome!
                     <br/>my name's
                     <br/><span className='c3 ul'>ivan varquez</span>
                     <br/><span className='f1 c3 text it'>&lt;<TextCycle />&gt;</span>
                     </span>
+                </FillUp>
             </motion.div>
             <motion.div style ={{ y: stars}} className='pimg0'>
             </motion.div>

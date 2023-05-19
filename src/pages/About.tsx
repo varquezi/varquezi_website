@@ -1,6 +1,7 @@
 import './pages.css'
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion';
+import { FillRight } from '../assets/animations/FillRight';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFile } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin, faInstagram, faYoutube} from '@fortawesome/free-brands-svg-icons'
@@ -15,16 +16,9 @@ export default function About() {
             <div className='flexrr' >
                 <div className='contentl'>
                     <div className='title c3' ref={ref}>
-                        <motion.div
-                            variants={{
-                                hidden: {opacity: 0, y: 10},
-                                visible: {opacity: 1, y: 0}
-                            }}
-                            initial= "hidden"
-                            animate= {isInView ? "visible":"hidden"}
-                            transition= {{ duration: 0.4, delay: 0.2 }}>
+                        <FillRight>
                         <span className='ul'>earth to me</span> 🌎
-                        </motion.div>
+                        </FillRight>
                     </div>
                     <div className='text f1 c0 borderb pb'>
                         <motion.div
