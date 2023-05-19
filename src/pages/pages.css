@@ -66,7 +66,7 @@ footer {
 }
 
 .pimg0 {
-    background-image: url('../assets/0-stars.png');
+    background-image: url('../assets/0-stars.webp');
     background-position: bottom center;
     background-size: cover;
     position: absolute;
@@ -77,7 +77,7 @@ footer {
 }
 
 .pimg1 {
-    background-image: url('../assets/1-planet.png');
+    background-image: url('../assets/1-planet.webp');
     background-position: bottom center;
     background-size: cover;
     position: absolute;
@@ -88,7 +88,7 @@ footer {
 }
 
 .pimg2 {
-    background-image: url('../assets/2-belt.png');
+    background-image: url('../assets/2-belt.webp');
     background-position: bottom center;
     background-size: cover;
     position: absolute;
@@ -99,7 +99,7 @@ footer {
 }
 
 .pimg3 {
-    background-image: url('../assets/3-main.png');
+    background-image: url('../assets/3-main.webp');
     background-position: bottom center;
     background-size: cover;
     position: absolute;
@@ -110,7 +110,7 @@ footer {
 }
 
 .pimg4 {
-    background-image: url('../assets/4-rocks.png');
+    background-image: url('../assets/4-rocks.webp');
     background-position: bottom center;
     background-size: cover;
     position: absolute;
