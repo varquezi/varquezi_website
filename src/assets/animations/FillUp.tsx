@@ -4,9 +4,10 @@ import { motion, useInView } from "framer-motion";
 interface Props {
   children: JSX.Element;
   width?: "fit-content" | "100%";
+  delay?: number;
 }
 
-export const FillUp = ({ children, width = "fit-content" }: Props) => {
+export const FillUp = ({ children, width = "fit-content", delay}: Props) => {
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -20,7 +21,7 @@ export const FillUp = ({ children, width = "fit-content" }: Props) => {
         }}
         initial="hidden"
         animate={isInView ? "visible":"hidden"}
-        transition={{ duration: 0.5, delay: 0.25 }}
+        transition={{ duration: 0.5, delay }}
       >
         {children}
       </motion.div>

@@ -14,14 +14,14 @@ export default function Contact() {
         <section id="contact">
             <div className='flexc'>
             <div className='contentm'>
-            <FillRight><div className='title c3'><span className='ul'>beam me up scotty</span> 🛸</div></FillRight>
-            <SlideReveal>
+            <FillRight delay={0}><div className='title c3'><span className='ul'>beam me up scotty</span> 🛸</div></FillRight>
+            <SlideReveal delay={0.05}>
                 <div className='text f1 c0'>
                     send me an email, let's get in touch!
                 </div>
             </SlideReveal>
             </div>
-            <FillUp><div className='mailwrap'>
+            <FillUp delay={0.1}><div className='mailwrap'>
             <a href = "mailto: ivan.varquez@mail.utoronto.ca"><button>< FontAwesomeIcon icon={faEnvelope}  className='icon'/>send message</button></a>
             </div></FillUp>
             <footer className='f1 c0'>

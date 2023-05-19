@@ -169,11 +169,6 @@ nav button:hover{
 }
 
 @media screen and (max-width: 769px) {
-    
-    #bar{
-        background-color: #93786377;
-        backdrop-filter: blur(0.5rem);
-    }
 
     #navbar{
         display: flex;

@@ -2,6 +2,8 @@ import './pages.css'
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion';
 import { FillRight } from '../assets/animations/FillRight';
+import { FillUp } from '../assets/animations/FillUp';
+import { SlideReveal } from '../assets/animations/SlideReveal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFile } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin, faInstagram, faYoutube} from '@fortawesome/free-brands-svg-icons'
@@ -15,20 +17,13 @@ export default function About() {
         <section id="about" className="top">
             <div className='flexrr' >
                 <div className='contentl'>
+                    <FillRight delay={0}>
                     <div className='title c3' ref={ref}>
-                        <FillRight>
                         <span className='ul'>earth to me</span> 🌎
-                        </FillRight>
                     </div>
+                    </FillRight>
+                    <SlideReveal delay={0.02}>
                     <div className='text f1 c0 borderb pb'>
-                        <motion.div
-                            variants={{
-                                hidden: {opacity: 0, y: 10},
-                                visible: {opacity: 1, y: 0}
-                            }}
-                            initial= "hidden"
-                            animate= {isInView ? "visible":"hidden"}
-                            transition= {{ duration: 0.4, delay: 0.3 }}>
                         <span className='f1'>
                         hi, i'm <span className="f1 c3"> ivan</span>!
                         i'm an MCS student at UofT currently looking for internship opportunities in <span className='f1 c3'>data and full stack web development</span>.
@@ -37,48 +32,21 @@ export default function About() {
                         <br/>you can either find me napping with my dog <span className='f1 c3'>Sol 🐶 </span>(who inspired the whole space theme of my website), or at the <span className='f1 c3'>links below</span>
                         <br/>keep scrolling to see some stuff i've worked on!
                         </span>
-                        </motion.div>
                     </div>
+                    </SlideReveal>
 
                     <div className='links'>
-                        <motion.div variants={{hidden: {opacity: 0, y: 25},visible: {opacity: 1, y: 0}}} initial= "hidden" animate= {isInView ? "visible":"hidden"} transition= {{ duration: 0.4, delay: 0.5 }}>
-                        <a href ="https://www.linkedin.com/in/ivanvarquez/" target="_blank">
-                            < FontAwesomeIcon icon={faLinkedin} className='icon' />
-                        </a>
-                        </motion.div>
-                        <motion.div variants={{hidden: {opacity: 0, y: 25},visible: {opacity: 1, y: 0}}} initial= "hidden" animate= {isInView ? "visible":"hidden"} transition= {{ duration: 0.4, delay: 0.52 }}>
-                        <a href ="https://github.com/varquezi" target="_blank">
-                            < FontAwesomeIcon icon={faGithub} className='icon' />
-                        </a>
-                        </motion.div>
-                        <motion.div variants={{hidden: {opacity: 0, y: 25},visible: {opacity: 1, y: 0}}} initial= "hidden" animate= {isInView ? "visible":"hidden"} transition= {{ duration: 0.4, delay: 0.54 }}>
-                        <a href ="https://www.instagram.com/ivanvarq/" target="_blank">
-                            < FontAwesomeIcon icon={faInstagram} className='icon' />
-                        </a>
-                        </motion.div>
-                        <motion.div variants={{hidden: {opacity: 0, y: 25},visible: {opacity: 1, y: 0}}} initial= "hidden" animate= {isInView ? "visible":"hidden"} transition= {{ duration: 0.4, delay: 0.56 }}>
-                        <a href ="https://www.youtube.com/@qarvingsi" target="_blank">
-                            < FontAwesomeIcon icon={faYoutube} className='icon' />
-                        </a>
-                        </motion.div>
-                        <motion.div variants={{hidden: {opacity: 0, y: 25},visible: {opacity: 1, y: 0}}} initial= "hidden" animate= {isInView ? "visible":"hidden"} transition= {{ duration: 0.4, delay: 0.58 }}>
-                        <a href ={resume} target="_blank">
-                            < FontAwesomeIcon icon={faFile} className='icon' />
-                        </a>
-                        </motion.div>
+                        <SlideReveal delay={0}><a href ="https://www.linkedin.com/in/ivanvarquez/" target="_blank">< FontAwesomeIcon icon={faLinkedin} className='icon' /></a></SlideReveal>
+                        <SlideReveal delay={0.02}><a href ="https://github.com/varquezi" target="_blank">< FontAwesomeIcon icon={faGithub} className='icon' /></a></SlideReveal>
+                        <SlideReveal delay={0.04}><a href ="https://www.instagram.com/ivanvarq/" target="_blank">< FontAwesomeIcon icon={faInstagram} className='icon' /></a></SlideReveal>
+                        <SlideReveal delay={0.06}><a href ="https://www.youtube.com/@qarvingsi" target="_blank">< FontAwesomeIcon icon={faYoutube} className='icon' /></a></SlideReveal>
+                        <SlideReveal delay={0.08}><a href ={resume} target="_blank">< FontAwesomeIcon icon={faFile} className='icon' /></a></SlideReveal>
                     </div>
                 </div>
                 <div className='profilewrap'>
-                    <motion.div
-                            variants={{
-                                hidden: {opacity: 0, y: 25},
-                                visible: {opacity: 1, y: 0}
-                            }}
-                            initial= "hidden"
-                            animate= {isInView ? "visible":"hidden"}
-                            transition= {{ duration: 0.4, delay: 0.1 }}>
+                    <FillUp delay={0.1}>
                     <div className='profile' />
-                    </motion.div>
+                    </FillUp>
                 </div>
             </div>
         </section>
