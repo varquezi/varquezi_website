@@ -8,7 +8,6 @@ nav{
     width: 100vw;
     height: 4rem;
     z-index: 9999;
-    
 }
 
 nav div{
@@ -167,6 +166,10 @@ nav div{
     color: var(--c0);
     background: var(--c3);
     cursor: pointer;
+}
+
+#mobile{
+    padding-right: 0.5rem;
 }
 
 nav button{
