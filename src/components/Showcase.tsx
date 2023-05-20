@@ -22,8 +22,8 @@ export default function Showcase() {
             {projs}
             <SlideReveal>
             <div className='card' onClick={() => setExpanded(!expanded)}>
-                <FillRight delay={0.3}><span className="text">{expanded ? "show less": "show more"}</span></FillRight>
-                <FillUp delay={0.35}>{expanded ? <FontAwesomeIcon className="cicon" icon= {faMinus} />: <FontAwesomeIcon className="cicon" icon= {faPlus} />}</FillUp>
+                <FillRight delay={0}><span className="text">{expanded ? "show less": "show more"}</span></FillRight>
+                <FillUp delay={0}>{expanded ? <FontAwesomeIcon className="cicon" icon= {faMinus} />: <FontAwesomeIcon className="cicon" icon= {faPlus} />}</FillUp>
             </div>
             </SlideReveal>
         </div>
