@@ -29,7 +29,6 @@ button {
     color: var(--c3);
     fill: var(--c3);
     transition: 0.3s;
-    
 }
 
 button .icon {
